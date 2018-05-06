@@ -1,0 +1,38 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: $text-color;
+  line-height: $text-line-height;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $heading-color;
+  line-height: $heading-line-height;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    color: #00708C;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
