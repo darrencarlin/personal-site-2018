@@ -1,5 +1,6 @@
 header {
-    h1,h4 {
+    h1,
+    h4 {
         color: $heading-color;
         letter-spacing: 1px;
         font-size: 1.5em;
@@ -18,7 +19,6 @@ header {
     justify-content: center;
     padding: 50px 0 0 0;
     margin: 0 0 50px 0;
-    
 }
 
 nav {
@@ -58,9 +58,9 @@ main {
         padding: 5px 0;
         line-height: 30px;
     }
-    a{
-       color: #94394c;
-       font-weight: bold;
+    a {
+        color: #94394c;
+        font-weight: bold;
     }
     margin: 0 0 70px 0;
 }
@@ -132,8 +132,6 @@ main {
             display: block;
             margin: 25px auto;
             cursor: pointer;
-           
-            
             padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
@@ -152,7 +150,7 @@ footer {
 }
 
 @media (min-width: 700px) {
-    .image {  
+    .image {
         img {
             display: block;
             margin: 0 auto;
@@ -165,18 +163,21 @@ footer {
     .work {
         ul {
             display: flex;
+            a {
+                min-height: 148px;
+            }
             li {
-                width: 50%;
+                width: 33.3333%;
             }
         }
     }
 }
 
 @media (min-width: 960px) {
-   .contact {
-       form {
-           width: 70%;
-           margin:0 auto;
-       }
-   }
+    .contact {
+        form {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
 }
