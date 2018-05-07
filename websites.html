@@ -3,86 +3,56 @@
 
 <head>
     <meta charset="utf-8">
-    <meta content="" name="description">
+    <meta content="Darren Carlin is a front-end web developer from Cork City, Ireland. He is currently living in New York City, United States."
+        name="description">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Darren Carlin</title>
+    <title>Darren Carlin ~ Work</title>
+    <link href="images/favicon.ico" rel="icon">
     <link href="dist/css/dazzle.min.css" rel="stylesheet">
 </head>
 
 <body class="websites">
-    <header>
+    <header role="banner">
         <h1>Darren J Carlin</h1>
         <h4>Creative Mindset, Technical Abilities</h4>
     </header>
     <nav>
         <ul>
             <li>
-                <a href="index.html">Back</a>
+                <a href="index.html" role="link">Back</a>
             </li>
         </ul>
     </nav>
-
     <main>
         <div class="gallery">
-            <div class="img">
-                <a href="http://makisushirolls.com">
-                    <img src="images/maki.png" alt="">
-                </a>
-                <ul>
-                    <li>Technologies:</li>
-                    <li>HTML5</li>
-                    <li>CSS3 (SCSS)</li>
-                    <li>Javascript</li>
-                    <li>PHP</li>
-                </ul>
-         
+            <div class="img" role="presentation">
+                <a href="http://makisushirolls.com" role="link" target="_blank">
+                    <img src="images/maki.png" alt="Maki Sushi Roll Logo"> </a>
             </div>
-            <div class="img">
-                <a href="http://phillyscropshop.com">
-                    <img src="images/cropshop.png" alt="">
-                </a>
-                <ul>
-                    <li>Technologies:</li>
-                    <li>HTML5</li>
-                    <li>CSS3 (SCSS)</li>
-                    <li>Javascript</li>
-                    <li>Logo Design</li>
-                </ul>
-          
+            <div class="img" role="presentation">
+                <a href="http://phillyscropshop.com" role="link" target="_blank">
+                    <img src="images/cropshop.png" alt="Philly's Crop Shop Logo"> </a>
             </div>
-
         </div>
     </main>
-
-    <footer>
-        <small>
-            &copy;
+    <footer role="contentinfo">
+        <small role="complementary"> &copy;
             <span id="year"> </span> Darren Carlin. All Rights Reserved</small>
     </footer>
-    <script src="dist/js/script.min.js">
-    </script>
-    <!-- Google Analytics -->
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29895478-1">
-    </script>
+    <script src="dist/js/script.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-29895478-1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-
         function gtag() {
-            dataLayer.push(arguments);
+            dataLayer.push(arguments)
         }
-        gtag('js', new Date());
-        gtag('config', 'UA-29895478-1');
+        window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-29895478-1");
     </script>
-    <!-- Google Fonts -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
             google: {
-                families: ['Roboto:400,700', 'Roboto+Slab:400,700']
+                families: ["Roboto:400,700", "Roboto+Slab:400,700"]
             }
         });
     </script>
