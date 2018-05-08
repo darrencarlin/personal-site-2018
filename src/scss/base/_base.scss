@@ -1,3 +1,24 @@
+
+header, nav, .work, .contact {
+  position: relative;
+  bottom: 25px;
+  animation: 2s ease 0s normal forwards 1 fadein;
+  transition: all .5s ease-in;
+}
+
+.image, .about {
+  position: relative;
+  bottom: -25px;
+  animation: 2s ease 0s normal forwards 1 fadein;
+  transition: all .5s ease-in;
+}
+
+@keyframes fadein{
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -162,12 +162,11 @@ footer {
 }
 
 .img {
-    width: 350px; 
+    width: 350px;
     height: auto;
     margin: 15px;
     opacity: 0.9;
     transition: all 0.3s ease-in-out; // position: relative;
-   
     &:hover {
         opacity: 1;
         ul {
@@ -193,7 +192,14 @@ footer {
     }
 }
 
-
+.error-page {
+    height: 100vh;
+    @extend .center;
+    img {
+        width: 460px;
+        height: auto;
+    } 
+}
 
 @media screen and (max-width: 500px) {
     .img {
