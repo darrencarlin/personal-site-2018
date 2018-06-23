@@ -151,13 +151,16 @@ footer {
 
 .websites {
     max-width: initial;
+    p {
+        text-align: center;
+    }
 }
 
 .gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 15px auto;
+    margin: 20px auto;
     width: 80%;
 }
 
@@ -185,11 +188,17 @@ footer {
             }
         }
     }
-    img {
+    img { 
         width: 100%;
         height: auto;
-        object-fit: cover;
+        object-fit: scale-down;
     }
+}
+
+.websites .img {
+   
+    width: 200px;
+    height: auto;
 }
 
 .error-page {
