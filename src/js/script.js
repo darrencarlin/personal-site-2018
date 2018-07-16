@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     // Fade in 
     let elements = document.querySelectorAll(
-        "header, nav, .image, .about, .work, .contact, .counter");
+        "header, nav, .image, .about, .work, .contact");
     elements.forEach((elem) => {
         elem.style.opacity = "1";
         elem.style.bottom = "0";
