@@ -3,6 +3,10 @@
     background: #00708C;
 }
 
+a:active, a:focus {
+    outline: 0;
+    border: none;
+  } 
 .center {
     display: flex;
     justify-content: center;

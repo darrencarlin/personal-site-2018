@@ -3,7 +3,6 @@ header {
     h4 {
         color: $heading-color;
         letter-spacing: 1px;
-        
         margin: 0;
         font-weight: 400;
     }
@@ -199,6 +198,9 @@ footer {
     h3 {
         margin: 20px 0 15px 0;
     }
+    header h3 {
+        margin: 0
+    }
     h4 {
         @extend .h4;
         margin: 0;
@@ -210,16 +212,41 @@ footer {
             color: #00708C;
             margin: 0;
             font-weight: 700;
+            display: inline-block;
             &:hover {
                 text-decoration: underline;
             }
+            
+            &:nth-of-type(2) {
+                margin: 0 0 0 10px;
+            }
+            &:last-of-type {
+                margin: 0 0 0 10px;
+            }
+        }
+        .link-container:first-of-type a:first-child {
+            margin: 0;
+        }
+        i {
+            color: #00708C;
         }
     }
     p {
         margin: 0 0 15px 0;
         font-size: 1.1em;
-        
         line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .websites h4 .link-container a {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .websites h4  {
+        display: flex;
     }
 }
 
