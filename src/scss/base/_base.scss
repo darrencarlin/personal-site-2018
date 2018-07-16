@@ -1,23 +1,33 @@
-
-header, nav, .work, .contact {
+header,
+nav,
+.work,
+.contact {
   position: relative;
   bottom: 25px;
   animation: 2s ease 0s normal forwards 1 fadein;
   transition: all .5s ease-in;
 }
 
-.image, .about {
+.image,
+.about {
   position: relative;
   bottom: -25px;
   animation: 2s ease 0s normal forwards 1 fadein;
   transition: all .5s ease-in;
 }
 
-@keyframes fadein{
-  0% { opacity:0; }
-  100% { opacity:1; }
+.counters {
+  animation: 3s ease 0s normal forwards 1 fadein;
 }
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -25,12 +35,10 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   color: $text-color;
   line-height: $text-line-height;
 }
-
-
 
 h1,
 h2,
@@ -40,7 +48,7 @@ h5,
 h6 {
   color: $heading-color;
   line-height: $heading-line-height;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 a {

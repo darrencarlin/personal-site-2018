@@ -1,13 +1,16 @@
 header {
-    h1,
+    h3,
     h4 {
         color: $heading-color;
         letter-spacing: 1px;
-        font-size: 1.5em;
+        
         margin: 0;
         font-weight: 400;
     }
     h1 {
+        color: $heading-color;
+        letter-spacing: 1px;
+        font-weight: 400;
         margin: 0 0 20px 0;
     }
     h4 {
@@ -19,6 +22,44 @@ header {
     justify-content: center;
     padding: 50px 0 0 0;
     margin: 0 0 50px 0;
+}
+
+// Counter 
+.counters {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    .counter {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .counter-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px 0;
+        flex-wrap: wrap;
+    }
+    svg {
+        width: 100px;
+        align-self: center;
+    }
+    p {
+        text-align: center;
+        padding: 20px;
+        font-size: 2em;
+        margin: 0 0 10px 0;
+    }
+    h3,
+    h4 {
+        @extend .h4;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .counter-wrapper {
+        flex-direction: column;
+    }
 }
 
 nav {
@@ -50,6 +91,7 @@ main {
 }
 
 .about {
+    h3,
     h4 {
         @extend .h4;
     }
@@ -66,10 +108,12 @@ main {
 }
 
 .work {
+    h3,
     h4,
     h2 {
         margin: 0 0 15px 0;
     }
+    h3,
     h4 {
         @extend .h4;
     }
@@ -95,6 +139,7 @@ main {
 }
 
 .contact {
+    h3,
     h4 {
         @extend .h4;
     }
@@ -150,9 +195,31 @@ footer {
 }
 
 .websites {
-    max-width: initial;
+    //letter-spacing: 1px;
+    h3 {
+        margin: 20px 0 15px 0;
+    }
+    h4 {
+        @extend .h4;
+        margin: 0;
+        text-transform: capitalize;
+        display: inline-block;
+        a {
+            border: 0;
+            padding: 15px 0 10px 0;
+            color: #00708C;
+            margin: 0;
+            font-weight: 700;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
     p {
-        text-align: center;
+        margin: 0 0 15px 0;
+        font-size: 1.1em;
+        
+        line-height: 30px;
     }
 }
 
@@ -188,7 +255,7 @@ footer {
             }
         }
     }
-    img { 
+    img {
         width: 100%;
         height: auto;
         object-fit: scale-down;
@@ -196,7 +263,6 @@ footer {
 }
 
 .websites .img {
-   
     width: 200px;
     height: auto;
 }
@@ -207,7 +273,7 @@ footer {
     img {
         width: 460px;
         height: auto;
-    } 
+    }
 }
 
 @media screen and (max-width: 500px) {
