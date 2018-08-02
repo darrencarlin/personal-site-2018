@@ -5,7 +5,7 @@ nav,
   position: relative;
   bottom: 25px;
   animation: 2s ease 0s normal forwards 1 fadein;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .image,
@@ -13,7 +13,7 @@ nav,
   position: relative;
   bottom: -25px;
   animation: 2s ease 0s normal forwards 1 fadein;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .counters {
@@ -35,7 +35,7 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: $text-color;
   line-height: $text-line-height;
 }
@@ -48,13 +48,13 @@ h5,
 h6 {
   color: $heading-color;
   line-height: $heading-line-height;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 a {
   text-decoration: none;
   &:hover {
-    color: #00708C;
+    color: #00708c;
   }
 }
 

@@ -1,52 +1,65 @@
 ::selection {
-    color: #ffffff;
-    background: #00708C;
+  color: #ffffff;
+  background: #00708c;
 }
 
-a:active, a:focus {
-    outline: 0;
-    border: none;
-  } 
+a:active,
+a:focus {
+  outline: 0;
+  border: none;
+}
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h4 {
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-    color: rgba(20, 20, 20, .75);
-    font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  color: rgba(20, 20, 20, 0.75);
+  font-weight: 400;
 }
 
 .linkedin,
 .twitter,
 .instagram,
 .codepen {
-    font-weight: bold; 
+  font-weight: bold;
 }
 
 .linkedin {
+  color: #191919;
+  &:hover {
     color: #0077b5;
+  }
 }
 
 .instagram {
+  color: #191919;
+  &:hover {
     color: #ffaf43;
+  }
 }
 
 .twitter {
-    color: #1ea1f2
+  color: #191919;
+  &:hover {
+    color: #1ea1f2;
+  }
 }
 
 .codepen {
-    color: #191919
+  color: #191919;
+  &:hover {
+    color: #191919;
+  }
 }
 .email {
-    position: relative;
-    color: #00708C;
-    font-weight: bold;
+  position: relative;
+  color: #191919;
+  font-weight: bold;
+  &:hover {
+    color: #00708c;
+  }
 }
-
-
-
